@@ -81,4 +81,4 @@ let tab = [10,20,15,5];
 function sum(acc, nb){
     return acc + nb;
 }
-results.textContent = "Somme : " + tab.reduce(sum, 0);
+res_btn.addEventListener("click", e=> results.textContent = "Somme : " + tab.reduce(sum, 0))
