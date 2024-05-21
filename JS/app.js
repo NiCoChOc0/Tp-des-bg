@@ -73,3 +73,12 @@ function moveItem(item){
 }
 setInterval(moveItem, 10, circle);
 setInterval(moveItem, 10, square);
+
+// EX Bonus
+let res_btn = document.getElementById("res_btn");
+let results = document.getElementById("results");
+let tab = [10,20,15,5];
+function sum(acc, nb){
+    return acc + nb;
+}
+results.textContent = "Somme : " + tab.reduce(sum, 0);
