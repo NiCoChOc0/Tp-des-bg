@@ -68,7 +68,7 @@ function moveItem(item){
     if (new_margin_value + item.style.width >= document.body.clientWidth){
         new_margin_value = 0;
     }
-
+    
     item.style.marginLeft = new_margin_value + "px";
 }
 setInterval(moveItem, 10, circle);
